@@ -1,0 +1,121 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: linear-gradient(0.25turn, red , white, blue);
+  color: black;
+}
+
+p {
+  font-weight: bolder;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+  color: Turquoise;
+  font-style: oblique;
+}
+
+button {
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+#gameButtonArea {
+  background-color: slategrey;
+  padding: 20px;
+}
+
+#gameButtonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+}
+
+/* #timer {
+  float: right;
+  width:50%;
+} */
+
+/* #strikes {
+  float: left;
+  width:50%;
+} */
+
+.center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+  background-color: green;
+}
+
+#button1:active, #button1.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Fgrass.jpg?1647369229194");
+}
+
+#button2 {
+  background-color: lightblue;
+}
+
+#button2:active, #button2.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Focean.jpg?1647369680432") ;
+}
+
+#button3 {
+  background-color: red;
+}
+
+#button3:active, #button3.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Fvolcano.jpg?1647369680983");
+}
+
+#button4 {
+  background-color: yellow;
+}
+
+#button4:active, #button4.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Fdaisy.jpg?1647369721320");
+}
+
+#button5 {
+  background-color: purple;
+}
+
+#button5:active, #button5.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Fdonuts.jpg?1647370388957");
+}
+
+#button6 {
+  background-color: Orange;
+}
+
+#button6:active, #button6.lit {
+  background-image: url("https://cdn.glitch.global/e59d0858-a1b0-429f-bb67-28a8b210b399/thumbnails%2Forange.jpg?1647370389819");
+}
