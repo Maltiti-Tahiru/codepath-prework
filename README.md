@@ -4,9 +4,9 @@
 
 Submitted by: **Maltiti Tahiru**
 
-Time spent: **#** hours spent in total
+Time spent: **8** hours spent in total
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: [(insert your link here, should start with https://glitch.com...)](https://glitch.com/edit/#!/ambiguous-noisy-clock)
 
 ## Required Functionality
 
@@ -39,14 +39,15 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+![](https://i.imgur.com/oPaac1l.gif)
+
+![](https://i.imgur.com/3z0rkXj.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+https://www.w3schools.com/
+https://developer.mozilla.org/en-US/
+
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 [YOUR ANSWER HERE]
@@ -66,7 +67,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright Maltiti Tahiru
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
