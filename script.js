@@ -18,6 +18,7 @@ function startGame() {
   //initialize game variables
   randomPattern();
   strikes = 0;
+  clueHoldTime = 1000;
   document.getElementById("strikes").innerHTML = "Strike: " + strikes;
   progress = 0;
   gamePlaying = true;
@@ -45,7 +46,7 @@ const freqMap = {
 
 //generates the patttern to be used
 function randomPattern() {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 3; i++) {
     pattern[i] = getRandomIntInclusive(1, 6);
     console.log(pattern[i]);
   }
@@ -120,8 +121,9 @@ function playClueSequence() {
     setTimeout(playSingleClue, delay, pattern[i]); // set a timeout to play that clue
     delay += clueHoldTime;
     delay += cluePauseTime;
-    clueHoldTime -= 10;
   }
+  console.log("clue hold time is " + clueHoldTime);
+  clueHoldTime -= 50;
 }
 
 function loseGame() {
