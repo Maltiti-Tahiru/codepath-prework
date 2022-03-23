@@ -2,7 +2,8 @@
 
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-const roundToPlay = 5; //how many rounds will be played
+const roundToPlay = 3; //how many rounds will be played
+const countdownSecs = 10; // time the countdownw will reset to
 
 //Global Variables
 var pattern = [];
@@ -13,7 +14,8 @@ var volume = 0.5;
 var guessCounter = 0;
 var clueHoldTime = 1000; // how long to hold each clue's light/sound
 var strikes = 0; // this is how many mistakes the player has made
-var secs = 10;
+var secs = countdownSecs; // var to keep track of time
+var theTimer; //the setIntervarl var name
 
 function startGame() {
   //initialize game variables
@@ -21,6 +23,7 @@ function startGame() {
   strikes = 0;
   clueHoldTime = 1000;
   document.getElementById("strikes").innerHTML = "Strike: " + strikes;
+  document.getElementById("timer").innerHTML = countdownSecs + " sec";
   progress = 0;
   gamePlaying = true;
   document.getElementById("startBtn").classList.add("hidden");
@@ -33,6 +36,8 @@ function stopGame() {
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
   document.getElementById("strikes").innerHTML = "Strike: 0";
+  clearInterval(theTimer);
+  document.getElementById("timer").innerHTML = countdownSecs + " sec";
 }
 
 // Sound Synthesis Functions
@@ -115,6 +120,8 @@ function playSingleClue(btn) {
 function playClueSequence() {
   guessCounter = 0;
   context.resume();
+  clearInterval(theTimer);
+  secs = countdownSecs;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     // for each clue that is revealed so far
@@ -125,11 +132,17 @@ function playClueSequence() {
   }
   console.log("clue hold time is " + clueHoldTime);
   clueHoldTime -= 50;
+  theTimer = setInterval(timer, 1000);
 }
 
 function loseGame() {
   stopGame();
   alert("STRIKE 3 \nGame Over. You lost.");
+}
+
+function loseGameTimer() {
+  stopGame();
+  alert("You Ran Out Of Time \nGame Over. You lost.");
 }
 
 function winGame() {
@@ -159,6 +172,7 @@ function guess(btn) {
       guessCounter++;
     }
   } else {
+    document.getElementById("strikes").innerHTML = "Strike: " + strikes;
     strikes += 1;
     document.getElementById("strikes").innerHTML = "Strike: " + strikes;
     //console.log("user strike: " + strikes);
@@ -170,5 +184,14 @@ function guess(btn) {
 
 function timer(){
   secs--;
-  document.getElementByid("timer").innerHTML = secs + ":00 sec";
+  document.getElementById("timer").innerHTML = secs + " sec";
+  if (secs == 0) {
+    loseGameTimer();
+  }
+}
+
+function stopCountdown() {
+  document.getElementById("timer").innerHTML = countdownSecs + " sec";
+  clearInterval(theTimer);
+  theTimer = null;
 }
