@@ -122,6 +122,7 @@ function playClueSequence() {
   context.resume();
   clearInterval(theTimer);
   secs = countdownSecs;
+  document.getElementById("timer").innerHTML = secs + " sec";
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
     // for each clue that is revealed so far
