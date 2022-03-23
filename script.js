@@ -2,6 +2,7 @@
 
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+const roundToPlay = 5;
 
 //Global Variables
 var pattern = [];
@@ -46,7 +47,7 @@ const freqMap = {
 
 //generates the patttern to be used
 function randomPattern() {
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < roundToPlay; i++) {
     pattern[i] = getRandomIntInclusive(1, 6);
     console.log(pattern[i]);
   }

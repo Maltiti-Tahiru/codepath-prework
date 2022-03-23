@@ -54,15 +54,15 @@ button {
   margin: 2px;
 }
 
-/* #timer {
+#timer {
   float: right;
   width:50%;
-} */
+} 
 
-/* #strikes {
+#strikes {
   float: left;
   width:50%;
-} */
+}
 
 .center {
   text-align: center;
