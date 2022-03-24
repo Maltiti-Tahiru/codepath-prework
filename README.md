@@ -4,7 +4,7 @@
 
 Submitted by: **Maltiti Tahiru**
 
-Time spent: **8** hours spent in total
+Time spent: **10** hours spent in total
 
 Link to project: [(insert your link here, should start with https://glitch.com...)](https://glitch.com/edit/#!/ambiguous-noisy-clock)
 
@@ -35,13 +35,19 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app!
+- [x] Added a user propmt for how many rounds will be played
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](https://i.imgur.com/oPaac1l.gif)
+![](https://i.imgur.com/QbQ6UMr.gif)
 
-![](https://i.imgur.com/3z0rkXj.gif)
+![](https://i.imgur.com/F3O8ki9.gif)
+
+![](https://i.imgur.com/vq9K36H.gif)
+
+![](https://i.imgur.com/fbKQVVZ.gif)
+
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
