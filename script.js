@@ -2,8 +2,8 @@
 
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-const roundToPlay = 3; //how many rounds will be played
-const countdownSecs = 10; // time the countdownw will reset to
+const roundToPlay = 6; //how many rounds will be played
+const countdownSecs = 25; // time the countdownw will reset to
 
 //Global Variables
 var pattern = [];
