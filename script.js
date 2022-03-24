@@ -2,7 +2,7 @@
 
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
-const roundToPlay = 6; //how many rounds will be played
+//const roundsToPlay = 6; //how many rounds will be played
 const countdownSecs = 25; // time the countdownw will reset to
 
 //Global Variables
@@ -16,10 +16,15 @@ var clueHoldTime = 1000; // how long to hold each clue's light/sound
 var strikes = 0; // this is how many mistakes the player has made
 var secs = countdownSecs; // var to keep track of time
 var theTimer; //the setIntervarl var name
+var rounds; // user will input how many rounds they want to play
 
 function startGame() {
   //initialize game variables
-  randomPattern();
+  rounds = prompt("How many rounds would you like to play? Must be more than 2."); //prompts user for how many rounds they'd like to play
+  while (rounds < 2) {
+    rounds = prompt("How many rounds would you like to play? Must be more than 2.");
+  }
+  randomPattern(rounds);
   strikes = 0;
   clueHoldTime = 1000;
   document.getElementById("strikes").innerHTML = "Strike: " + strikes;
@@ -51,8 +56,8 @@ const freqMap = {
 };
 
 //generates the patttern to be used
-function randomPattern() {
-  for (let i = 0; i < roundToPlay; i++) {
+function randomPattern(roundsToPlay) {
+  for (let i = 0; i < roundsToPlay; i++) {
     pattern[i] = getRandomIntInclusive(1, 6);
     console.log(pattern[i]);
   }
