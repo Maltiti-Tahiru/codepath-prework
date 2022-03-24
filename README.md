@@ -6,7 +6,7 @@ Submitted by: **Maltiti Tahiru**
 
 Time spent: **10** hours spent in total
 
-Link to project: [(insert your link here, should start with https://glitch.com...)](https://glitch.com/edit/#!/ambiguous-noisy-clock)
+Link to project: [(https://glitch.com/edit/#!/ambiguous-noisy-clock)]
 
 ## Required Functionality
 
