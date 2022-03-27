@@ -63,7 +63,7 @@ https://youtube.com
 [YOUR ANSWER HERE]
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+[I would spend the additional hours adding more features. One feature I did add is asking the player how many rounds they would like to play. I made this feature as a JavaScript prompt, but I would improve it by adding it as a JavaScript form instead to make the page more visually appealing. How many rounds the player chooses to play would also affect the time on the countdown clock, with more rounds increasing the time on the clock. Another feature I would add is whether the player would like three strikes or just one mistake allowed.]
 
 
 
