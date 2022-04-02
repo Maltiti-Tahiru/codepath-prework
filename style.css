@@ -48,10 +48,16 @@ button {
   padding: 20px;
 }
 
-#gameButtonArea > button {
+/* #gameButtonArea > button {
   width: 200px;
   height: 200px;
   margin: 2px;
+} */
+
+#buttonArea > button {
+  width: 200px;
+  height: 200px;
+  margin: 2px;  
 }
 
 #timer {
